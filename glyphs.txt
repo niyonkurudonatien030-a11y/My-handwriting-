@@ -1,0 +1,47 @@
+# ======================================================================
+#  glyphs.txt  -  tells the editor which picture to show for which key
+# ======================================================================
+#  FORMAT:   key = picture-file.png
+#     key  = the character you type: a  b  7  A ...   (or U+0041 style code)
+#     Any character NOT listed here is shown as normal text
+#     (spaces, punctuation, and any letter/digit you have not mapped yet).
+#  Lines starting with # are comments.  Put "space #" before an end-of-line comment.
+#
+#  SETTINGS (optional, one per line, start with @).
+#  The Windows editor reads the first group, the Android app reads the second;
+#  each one quietly ignores the other's lines, so ONE glyphs.txt works on both.
+#  --- Windows settings ---
+@cell_width=44          # width of every character box, in pixels
+@cell_height=64         # height of every character box
+@glyph_padding=6        # empty space kept around each picture
+@case_insensitive=1     # 1 = capital A uses the same picture as a;  0 = give each its own
+@font=Consolas          # font used for characters that have no picture
+@font_px=34             # size of that font
+#  --- Android settings ---
+@android_text_sp=28       # size of the letters, in sp
+@android_cell_width=0.9  # width of one glyph box, as a fraction of the text size
+@android_glyph_scale=0.9 # how much of the line height each picture may fill (0.1 - 1.0)
+#
+#  DEMO MAPPING - these 18 glyphs are only EXAMPLES (g01.png ... g18.png).
+#  Re-assign them to the right keys, then add the remaining letters and digits.
+a = g01.png
+b = g02.png
+c = g03.png
+d = g04.png
+e = g05.png
+f = g06.png
+g = g07.png
+h = g08.png
+i = g09.png
+j = g10.png
+k = g11.png
+l = g12.png
+m = g13.png
+n = g14.png
+o = g15.png
+p = g16.png
+q = g17.png
+r = g18.png
+# Still to add by you:  s t u v w x y z   and   0 1 2 3 4 5 6 7 8 9
+# Example:   s = my_s.png
+#            7 = my_seven.png
